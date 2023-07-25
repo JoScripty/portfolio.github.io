@@ -1,0 +1,386 @@
+:root{
+    --background: url(images/backgrond.jpg);
+    --text-color: #dddbcb;
+    --content-color: #66fcf1;
+    --logo-font: 'Monoton', sans-serif;
+    --primary-font: 'Bebas Neue', sans-serif;
+    --secondary-font: 'Mukta', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: var(--background) no-repeat fixed center/cover;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 100px;
+    z-index: 100;
+    background-color: var(--background-color);
+}
+
+.logo{
+    text-decoration: none;
+    font: 40px var(--logo-font);
+    color: var(--content-color);
+    letter-spacing: 2px;
+    margin-right: 120px;
+}
+
+.logo span{
+    font-size: 30px;
+}
+
+nav{
+    width: fit-content;
+    height: fit-content;
+    z-index: 80;
+}
+
+nav a{
+    text-decoration: none;
+    font: 18px var(--secondary-font);
+    text-transform: uppercase;
+    color: var(--text-color);
+    letter-spacing: 2px;
+    margin-right: 50px;
+    transition: .2s;
+    z-index: 50;
+}
+
+nav a:last-child{
+    margin-right: 0;
+}
+
+nav a:hover{
+    color: var(--content-color);
+}
+
+main{
+    min-height: 100vh;
+    width: 100%;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.homeContents{
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 150px;
+    padding-top: 60px;
+    padding-right: 240px;
+}
+
+.myProfile{
+    height: 500px;
+    margin-right: 80px;
+}
+
+.homeText{
+    font: 20px var(--primary-font);
+    color: var(--text-color);
+}
+
+.hello{
+    letter-spacing: 2px;
+    font-style: italic;
+    font-size: 28px;
+}
+
+.myName{
+    letter-spacing: 4px;
+    font-size: 80px;
+}
+
+.myWork{
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    font-size: 42px;
+}
+
+.myWork span{
+    color: var(--content-color);
+}
+
+.welcome{
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 17px;
+    font-style: italic;
+}
+
+.socialMedia{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 90px;
+}
+
+.socialMedia i{
+    font-size: 32px;
+    color: var(--content-color);
+    transition: .2s;
+}
+
+.aContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+}
+
+.socialMedia a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 5px;
+    border: 3px var(--content-color) solid;
+    height: 47px;
+    width: 47px;
+    border-radius: 80%;
+    transition: .2s;
+}
+
+.socialMedia a:first-child{
+    margin-left: 0;
+}
+
+.socialMedia a:last-child{
+    margin-right: 0;
+}
+
+.socialMedia a:hover{
+    box-shadow: 0 0 13px var(--content-color);
+    height: 52px;
+    width: 52px;
+}
+
+.socialMedia i:hover{
+    font-size: 36px;
+}
+
+.aboutContents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 80px 80px 0 100px;  
+}
+
+.aboutContents h5{
+    letter-spacing: 12px;
+    font-family: var(--primary-font);
+    font-size: 80px;
+    color: var(--content-color);
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    border-left: 3px var(--text-color) solid;
+    padding-left: 10px;
+    height: 450px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.aboutContext{
+    font-family: var(--secondary-font);
+    font-size: 14px;
+    color: var(--text-color);
+    margin: 5px;
+}
+
+.meb, .strth, .wkns, .fg{
+    font-family: var(--primary-font);
+    font-size: 18px;
+    letter-spacing: 2.5px;
+}
+
+.mebC, .strthC, .wknsC{
+    border-bottom: 2px var(--content-color) solid;
+    padding: 4px 0 10px;
+    margin-bottom: 8px;
+}
+
+.fgC{
+    padding-top: 4px;
+    margin-bottom: 8px;
+}
+
+.skillsContents{
+    padding: 0 70px;
+    color: #dddbcb;
+}
+
+.skillHeading{
+    text-align: center;
+    font-size: 50px;
+    font-family: var(--primary-font);
+    width: 100%;
+    margin: 70px auto 50px;
+    color: var(--content-color);
+    letter-spacing: 8px;
+}
+
+.skillsContext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+
+.htmlSkill h6, .cssSkill h6{
+    text-align: center;
+    font-family: var(--primary-font);
+    font-size: 23px;
+    letter-spacing: 3px;
+    padding-left: 8px;
+    color: var(--text-color);
+}
+
+.htmlSkill i{
+    font-size: 120px;
+    color: rgb(201, 97, 0);
+    text-align: center;
+    width: 100%;
+}
+
+.cssSkill{
+    padding-bottom: 26px;
+    background-color: rgba(255, 255, 255, 0.336);
+    border-radius: 40px;
+}
+
+.htmlSkill{
+    background-color: rgba(255, 255, 255, 0.336);
+    border-radius: 40px;
+}
+
+.cssSkill p, .htmlSkill p{
+    width: 500px;
+    text-align: justify;
+    font-family: var(--secondary-font);
+    color: var(--text-color);
+    font-size: 15px;
+    padding: 0 20px;
+}
+
+.cssSkill i{
+    font-size: 120px;
+    color: rgb(0, 32, 173);
+    text-align: center;
+    width: 100%;
+}
+
+.contactContents{
+    margin-top: 90px;
+    width: 33%;
+}
+
+.contactMe{
+    font-family: var(--primary-font);
+    font-size: 45px;
+    color: var(--content-color);
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 7px;
+}
+
+form{
+    width: 100%;
+}
+
+input[type=text], label, input[type=email]{
+    display: block;
+    width: 100%;
+    margin-bottom: 2px;
+    color: var(--text-color);
+}
+
+label{
+    font-family: var(--secondary-font);
+    font-size: 19px;
+}
+
+input[type=text], input[type=email]{
+    border: none;
+    padding: 6px 20px 6px 0;
+    border-bottom: 3px var(--content-color) solid;
+    background: transparent;
+    margin-bottom: 20px;
+    color: var(--text-color);
+    font-family: var(--secondary-font);
+    font-size: 14px;
+}
+
+#message{
+    padding-bottom: 100px;
+    padding-top: 2px;
+}
+
+input[type=email]:focus{
+    background-color: rgba(255, 255, 255, 0.336);
+    outline: none;
+    color: var(--text-color);
+    font-size: 14px;
+    font-family: var(--secondary-font);
+    border-radius: 5px;
+
+}
+
+input[type=text]:focus{
+    background-color: rgba(255, 255, 255, 0.336);
+    color: var(--text-color);
+    font-size: 14px;
+    font-family: var(--secondary-font);
+    outline: none;
+    border-radius: 5px;
+}
+
+input[type=submit], input[type=reset]{
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    color: var(--text-color);
+    font-family: var(--secondary-font);
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: .2s;
+}
+
+input[type=submit]:hover{
+    color: var(--content-color);
+}
+
+input[type="reset"]:hover{
+    color: rgb(241, 37, 37);
+}
